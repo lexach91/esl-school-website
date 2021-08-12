@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Animation on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--  -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Starlight English | Home</title>
   </head>
@@ -42,14 +45,33 @@
       <section id="about-section">
         <h2>About us</h2>
 
-        <div class="about-container">
-          <div class="left-about">
+        <div
+          class="about-container"
+          
+        >
+          <div class="left-about"
+          data-aos="flip-left"
+          data-aos-offset="0"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center">
             <img
               src="assets/images/boy-with-cubes.jpg"
               alt="Boy playing with cubes"
             />
           </div>
-          <div class="right-about">
+          <div class="right-about" 
+          data-aos="flip-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center">
             <div>
               <h3>Who are we?</h3>
               <p>
@@ -86,7 +108,15 @@
       </section>
       <section id="teachers">
         <h2>Meet Our Team</h2>
-        <div>
+        <div
+        data-aos="flip-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center">
           <div id="teacher1" class="teacher-card">
             <img src="assets/images/teacher1.jpg" alt="Woman teacher" />
             <h3>Madison</h3>
@@ -198,5 +228,11 @@
       src="https://kit.fontawesome.com/8e4b08b302.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Animation on scroll script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
