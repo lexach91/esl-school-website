@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap");
 
+:root {
+    --color-1: #A99A45ff;
+    --color-2: #F95E4Eff;
+    --color-3: #B6B6AEff;
+    --color-4: #7E2412ff;
+    --font-1: "Rock Salt", cursive;
+    --font-2: "Raleway", sans-serif;
+}
+
 *,
 *::after,
 *::before {
@@ -10,6 +19,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-3);
 }
 
 .main-container {
@@ -24,10 +37,10 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: whitesmoke;
+  background-color: var(--color-1);
   height: 70px;
   align-items: center;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-2);
   font-weight: bolder;
 }
 
@@ -47,11 +60,12 @@ html {
 
 #menu a {
   text-decoration: none;
+  color: #000;
 }
 
 #logo {
   margin-left: 30px;
-  font-family: "Rock Salt", cursive;
+  font-family: var(--font-1);
   text-decoration: none;
   font-size: xx-large;
 }
@@ -92,21 +106,30 @@ html {
   text-transform: uppercase;
   letter-spacing: 4px;
   text-align: center;
-  width: 30%;
+  width: 40%;
   height: 13em;
-
+    
   padding-top: 40px;
   padding-left: 10px;
 
   background-color: rgba(0, 0, 0, 0.5);
 
-  top: 30px;
+  top: 40px;
   right: 150px;
   border-radius: 10px;
   position: absolute;
   animation-name: hero-text-appear;
   animation-duration: 7s;
   animation-fill-mode: forwards;
+}
+
+#hero-text h2 {
+    font-family: var(--font-1);
+    color: var(--color-1);
+}
+
+#hero-text h3 {
+    font-family: var(--font-2);
 }
 
 #hero-text a {
@@ -158,6 +181,8 @@ html {
   text-align: center;
   font-size: 200%;
   text-transform: uppercase;
+  font-family: var(--font-1);
+  color: whitesmoke;
 }
 
 #about-section img {
@@ -182,11 +207,13 @@ html {
   width: 66%;
   text-align: center;
   line-height: 2;
+  font-family: var(--font-2);
 }
 
 .right-about div h3 {
   font-size: 150%;
   text-transform: uppercase;
+  
 }
 
 .right-about div {
@@ -213,6 +240,8 @@ html {
 #teachers h2 {
     font-size: 250%;
     margin: 30px;
+    font-family: var(--font-1);
+    color: #fff;
 }
 
 .teacher-card {
@@ -260,6 +289,12 @@ html {
 #flashcards {
     text-align: center;
     margin-top: 200px;
+}
+
+#flashcards h2 {
+    font-family: var(--font-1);
+    font-size: 200%;
+    color: #fff
 }
 
 #flashcard-container {
