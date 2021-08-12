@@ -373,3 +373,43 @@ footer p {
     color: white;
     transform: scale(1.2) rotate(4deg); 
 }
+
+
+
+@media screen and (max-width: 1470px) {
+    .left-about {
+        width: 40%;
+      }
+      
+      .right-about {
+        width: 60%;
+        
+        line-height: 1.5;
+        
+      }
+}
+
+@media screen and (max-width: 1200px) {
+    .left-about {
+        width: 50%;
+      }
+      
+      .right-about {
+        width: 50%;
+        line-height: 1.5;
+      }
+}
+
+@media screen and (max-width: 1080px) {
+    .about-container {
+        flex-direction: column-reverse;
+    }
+    .left-about {
+        width: 100%;
+      }
+      
+      .right-about {
+        width: 100%;
+        line-height: 1.5;
+      }
+}
