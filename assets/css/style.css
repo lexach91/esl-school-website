@@ -1,14 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap");
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
+.main-container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+/* Menu */
 
 #menu {
   display: flex;
@@ -18,7 +27,7 @@ html {
   background-color: whitesmoke;
   height: 70px;
   align-items: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: bolder;
 }
 
@@ -42,7 +51,7 @@ html {
 
 #logo {
   margin-left: 30px;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   text-decoration: none;
   font-size: xx-large;
 }
@@ -50,126 +59,197 @@ html {
 /* hero */
 
 #hero-section {
-    width: 100%;
-    height: 50em;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 50em;
+  overflow: hidden;
+  position: relative;
 }
 
 #hero-image {
-    background: url("../images/hero.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 50em;
-    
-    animation-name: hero-move;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    position: absolute;
-    left: 0;
+  background: url("../images/hero.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 50em;
+
+  animation-name: hero-move;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  left: 0;
 }
 
 @keyframes hero-move {
-    from{
-        background-position: center top;
-    }
-    to{
-        background-position: center center;
-    }
+  from {
+    background-position: center top;
+  }
+  to {
+    background-position: center center;
+  }
 }
 
 #hero-text {
-    font-size: 130%;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-align: center;
-    width: 30%;
-    height: 13em;
+  font-size: 130%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  width: 30%;
+  height: 13em;
 
-    padding-top: 40px;
-    padding-left: 10px;
+  padding-top: 40px;
+  padding-left: 10px;
 
-    background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
 
-    top: 30px;
-    right: 150px;
-    border-radius: 10px;
-    position: absolute;
-    animation-name: hero-text-appear;
-    animation-duration: 7s;
-    animation-fill-mode: forwards;
+  top: 30px;
+  right: 150px;
+  border-radius: 10px;
+  position: absolute;
+  animation-name: hero-text-appear;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
 }
 
 #hero-text a {
-    color: white;
-    font-size: 200%;
+  color: white;
+  font-size: 200%;
 }
 
 #hero-text i {
-    margin-top: 40px;
+  margin-top: 40px;
 
-    animation-name: glowing;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+  animation-name: glowing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes glowing {
-    0%{
-        opacity: 1;
-    }
-    50%{
-        opacity: .3;
-    }
-    100%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes hero-text-appear {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* About us section */
 
 #about-section {
-    width: 100%;
-    height: 50em;
-    overflow: hidden;
-    position: relative;
-    margin: 10px;
+  width: 100%;
+  /* height: 50em; */
+  /* overflow: hidden; */
+  /* position: relative; */
+  margin: 10px;
+  padding-top: 15px;
 }
 
 #about-section h2 {
-    text-align: center;
+  text-align: center;
+  font-size: 200%;
+  text-transform: uppercase;
 }
 
 #about-section img {
-    
-    height: 40em;
-    border-radius: 10px;
-    box-shadow: 10px 10px 8px #888888;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px #888888;
 }
 
 .about-container {
-    padding: 5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+  padding: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .left-about {
-    width: 33%;
-
+  width: 33%;
 }
 
 .right-about {
-    width: 66%;
-    text-align: center;
-    line-height: 2;
+  width: 66%;
+  text-align: center;
+  line-height: 2;
+}
+
+.right-about div h3 {
+  font-size: 150%;
+  text-transform: uppercase;
+}
+
+.right-about div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.right-about div:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+  background-color: rgba(7, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Teachers */
+
+#teachers {
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+  padding-top: 15px;
+}
+
+#teachers h2 {
+    font-size: 250%;
+    margin: 30px;
+}
+
+.teacher-card {
+  display: inline-block;
+  width: 25%;
+  position: relative;
+  background-color: #888888;
+  text-align: center;
+  border-radius: 10px;
+}
+#teacher1 {
+  transform: rotate(-30deg) translateY(20%) translateX(30%);
+  z-index: 3;
+  transition: all 1000ms ease-in-out;
+
+}
+
+#teacher2 {
+  z-index: 2;
+  transition: all 1000ms ease-in-out;
+}
+
+#teacher3 {
+  transform: rotate(30deg) translateY(20%) translateX(-30%);
+  z-index: 1;
+  transition: transform 1000ms ease-in-out;
+
+}
+
+.teacher-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+#teacher1:hover,
+#teacher2:hover,
+#teacher3:hover {
+  z-index: 999;
+  transform: rotate(0deg) scale(1.1);
 }
