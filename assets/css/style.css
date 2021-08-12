@@ -253,3 +253,25 @@ html {
   z-index: 999;
   transform: rotate(0deg) scale(1.1);
 }
+
+
+/* Flashcards */
+
+#flashcards {
+    text-align: center;
+    margin-top: 200px;
+}
+
+#flashcard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flashcard {
+    width: 20%;
+}
+
+.flashcard img {
+    width: 100%;
+}
