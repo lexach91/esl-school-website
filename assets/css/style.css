@@ -132,14 +132,11 @@ body {
     font-family: var(--font-2);
 }
 
-#hero-text a {
+
+.glow-button {
+  margin-top: 40px;
   color: white;
   font-size: 200%;
-}
-
-#hero-text i {
-  margin-top: 40px;
-
   animation-name: glowing;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -246,11 +243,18 @@ body {
 
 .teacher-card {
   display: inline-block;
-  width: 25%;
+  width: 22%;
   position: relative;
-  background-color: #888888;
+  background-color: var(--color-1);
   text-align: center;
   border-radius: 10px;
+  font-family: var(--font-2);
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.teacher-card p {
+    margin: 10px;
 }
 #teacher1 {
   transform: rotate(-30deg) translateY(20%) translateX(30%);
@@ -294,13 +298,13 @@ body {
 #flashcards h2 {
     font-family: var(--font-1);
     font-size: 200%;
-    color: #fff
+    color: #fff;
 }
 
 #flashcard-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .flashcard {
@@ -309,4 +313,54 @@ body {
 
 .flashcard img {
     width: 100%;
+}
+
+.flashcard audio {
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    height: 10em;
+    background-color: var(--color-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;    
+}
+
+footer p {
+    color: white;
+}
+
+.social-networks {
+    display: flex;
+    list-style: none;
+    
+}
+
+.social-networks li {
+    display: block;
+    position: relative;
+    font-size: 230%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 0 20px;
+}
+
+.social-networks a {
+    color: white;
+}
+
+.social-networks i {
+    transition: all 200ms ease-in-out;
+}
+
+.social-networks i:hover {
+    color: white;
+    transform: scale(1.2) rotate(4deg); 
 }
