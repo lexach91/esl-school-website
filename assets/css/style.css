@@ -361,6 +361,22 @@ nav span::after {
 .flashcard {
   width: 35%;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.flashcard-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.36);
+    transform: scale(0,0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.flashcard:hover .flashcard-content {
+    transform: scale(1,1);
 }
 
 .flashcard img {
