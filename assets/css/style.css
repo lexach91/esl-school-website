@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap");
 
 :root {
-    --color-1: #A99A45ff;
-    --color-2: #F95E4Eff;
-    --color-3: #B6B6AEff;
-    --color-4: #7E2412ff;
-    --font-1: "Rock Salt", cursive;
-    --font-2: "Raleway", sans-serif;
+  --color-1: #a99a45ff;
+  --color-2: #f95e4eff;
+  --color-3: #b6b6aeff;
+  --color-4: #7e2412ff;
+  --font-1: "Rock Salt", cursive;
+  --font-2: "Raleway", sans-serif;
 }
 
 *,
@@ -22,8 +22,9 @@ html {
 }
 
 body {
-    background-color: var(--color-3);
-    overflow-x: hidden;
+  background-color: var(--color-3);
+  overflow-x: hidden;
+  text-align: center;
 }
 
 .main-container {
@@ -66,7 +67,7 @@ body {
 }
 
 #menu li:hover {
-    transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1) rotate(5deg);
 }
 
 #logo {
@@ -114,7 +115,7 @@ body {
   text-align: center;
   width: 40%;
   height: 13em;
-    
+
   padding-top: 40px;
   padding-left: 10px;
 
@@ -130,17 +131,16 @@ body {
 }
 
 #hero-text h2 {
-    font-family: var(--font-1);
-    color: var(--color-1);
+  font-family: var(--font-1);
+  color: var(--color-1);
 }
 
 #hero-text h3 {
-    font-family: var(--font-2);
+  font-family: var(--font-2);
 }
 
-
 .glow-button {
-  margin-top: 40px;
+  margin: 40px;
   color: white;
   font-size: 200%;
   animation-name: glowing;
@@ -191,7 +191,7 @@ body {
 #about-section img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 0 20px 9px rgba(0,0,0,0.36);
+  box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.36);
 }
 
 .about-container {
@@ -216,7 +216,6 @@ body {
 .right-about div h3 {
   font-size: 150%;
   text-transform: uppercase;
-  
 }
 
 .right-about div {
@@ -241,10 +240,10 @@ body {
 }
 
 #teachers h2 {
-    font-size: 250%;
-    margin: 30px;
-    font-family: var(--font-1);
-    color: #fff;
+  font-size: 250%;
+  margin: 30px;
+  font-family: var(--font-1);
+  color: #fff;
 }
 
 .teacher-card {
@@ -258,17 +257,16 @@ body {
   color: #000;
   margin-bottom: 100px;
   border: 1px solid white;
-  box-shadow: 0 0 20px 9px rgba(0,0,0,0.36);
+  box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.36);
 }
 
 .teacher-card p {
-    margin: 10px;
+  margin: 10px;
 }
 #teacher1 {
   transform: rotate(-30deg) translateY(20%) translateX(30%);
   z-index: 3;
   transition: all 1000ms ease-in-out;
-
 }
 
 #teacher2 {
@@ -280,7 +278,6 @@ body {
   transform: rotate(30deg) translateY(20%) translateX(-30%);
   z-index: 1;
   transition: all 1000ms ease-in-out;
-
 }
 
 .teacher-card img {
@@ -296,120 +293,126 @@ body {
   margin: 0 15%;
 }
 
-
 /* Flashcards */
 
 #flashcards {
-    text-align: center;
-    margin-top: 200px;
+  text-align: center;
+  margin-top: 200px;
 }
 
 #flashcards h2 {
-    font-family: var(--font-1);
-    font-size: 200%;
-    color: #fff;
+  font-family: var(--font-1);
+  font-size: 200%;
+  color: #fff;
 }
 
 #flashcard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.two-cards {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
 
 .flashcard {
-    width: 20%;
+  width: 35%;
 }
 
 .flashcard img {
-    width: 100%;
+  width: 100%;
 }
 
 .flashcard audio {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* Footer */
 
 footer {
-    height: 10em;
-    background-color: var(--color-1);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    flex-direction: column;    
+  height: 10em;
+  background-color: var(--color-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
 }
 
 footer p {
-    color: white;
+  color: white;
 }
 
 .social-networks {
-    display: flex;
-    list-style: none;
-    
+  display: flex;
+  list-style: none;
 }
 
 .social-networks li {
-    display: block;
-    position: relative;
-    font-size: 230%;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    margin: 0 20px;
+  display: block;
+  position: relative;
+  font-size: 230%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 0 20px;
 }
 
 .social-networks a {
-    color: white;
+  color: white;
 }
 
 .social-networks i {
-    transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .social-networks i:hover {
-    color: white;
-    transform: scale(1.2) rotate(4deg); 
+  color: white;
+  transform: scale(1.2) rotate(4deg);
 }
 
-
-
 @media screen and (max-width: 1470px) {
-    .left-about {
-        width: 40%;
-      }
-      
-      .right-about {
-        width: 60%;
-        
-        line-height: 1.5;
-        
-      }
+  .left-about {
+    width: 40%;
+  }
+
+  .right-about {
+    width: 60%;
+
+    line-height: 1.5;
+  }
+
+  #flashcard-container {
+      flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .left-about {
-        width: 50%;
-      }
-      
-      .right-about {
-        width: 50%;
-        line-height: 1.5;
-      }
+  .left-about {
+    width: 50%;
+  }
+
+  .right-about {
+    width: 50%;
+    line-height: 1.5;
+  }
 }
 
 @media screen and (max-width: 1080px) {
-    .about-container {
-        flex-direction: column-reverse;
-    }
-    .left-about {
-        width: 100%;
-      }
-      
-      .right-about {
-        width: 100%;
-        line-height: 1.5;
-      }
+  .about-container {
+    flex-direction: column-reverse;
+  }
+  .left-about {
+    width: 100%;
+  }
+
+  .right-about {
+    width: 100%;
+    line-height: 1.5;
+  }
 }
