@@ -34,6 +34,10 @@ body {
 
 /* Menu */
 
+header {
+    width: 100%;
+}
+
 #menu {
   display: flex;
   flex-direction: row;
@@ -44,6 +48,7 @@ body {
   align-items: center;
   font-family: var(--font-2);
   font-weight: bolder;
+  width: 100%;
 }
 
 #menu ul {
@@ -202,6 +207,7 @@ body {
   flex-direction: row;
 }
 
+
 .left-about {
   width: 33%;
 }
@@ -322,6 +328,7 @@ body {
 
 .flashcard {
   width: 35%;
+  margin-bottom: 20px;
 }
 
 .flashcard img {
@@ -415,4 +422,43 @@ footer p {
     width: 100%;
     line-height: 1.5;
   }
+}
+
+
+@media screen and (max-width: 980px) {
+    #teacher-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .teacher-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #teacher1, #teacher3 {
+        transform: rotate(0deg);
+    }
+
+    .two-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flashcard {
+        width: 80%;
+    }
+
+    .about-container, .right-about, .left-about {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #about-section {
+        margin: 0 auto;
+    }
+    
 }
