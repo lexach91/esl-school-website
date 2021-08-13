@@ -335,7 +335,8 @@ nav span::after {
 
 #flashcards {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 #flashcards h2 {
@@ -345,9 +346,10 @@ nav span::after {
 }
 
 #flashcard-container {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -362,6 +364,7 @@ nav span::after {
   width: 35%;
   margin-bottom: 20px;
   position: relative;
+  transition: transform 0.5s ease-in-out;
 }
 
 .flashcard-content {
@@ -375,6 +378,18 @@ nav span::after {
     transition: transform 0.5s ease-in-out;
 }
 
+.flashcard-content h3 {
+    font-size: 250%;
+    margin-top: 25%;
+    margin-bottom: 10px;
+    font-family: var(--font-2);
+    color: white;
+}
+
+.flashcard:hover {
+    transform: scale(1.1);
+}
+
 .flashcard:hover .flashcard-content {
     transform: scale(1,1);
 }
@@ -384,7 +399,7 @@ nav span::after {
 }
 
 .flashcard audio {
-  width: 100%;
+  width: 80%;
 }
 
 /* Footer */
