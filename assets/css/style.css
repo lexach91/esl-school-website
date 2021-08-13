@@ -38,6 +38,36 @@ header {
     width: 100%;
 }
 
+nav input, nav label {
+    display: none;
+}
+
+nav span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+}
+
+nav span::before,
+nav span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: black;
+}
+
+nav span::before {
+    top: -6px;
+}
+
+nav span::after {
+    top: 3px;
+}
+
 #menu {
   display: flex;
   flex-direction: row;
@@ -461,4 +491,61 @@ footer p {
         margin: 0 auto;
     }
     
+    #logo {
+        font-size: 1em;
+    }
+
+    #menu {
+        position: relative;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 160px;
+        /* display: none; */
+        position: absolute;
+        top: 70px;
+        right: 0;
+        z-index: 999;
+        background-color: var(--color-1);
+        visibility: hidden;
+    }
+
+    nav label {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 26px;
+        transform: scale(1.2);
+        width: 34px;
+        height: 44px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav span, nav span::after, nav span::before {
+        display: block;
+        position:relative;
+        transition: all 1s ease-in-out;
+    }
+    
+    #check:checked ~ ul {
+        visibility: visible;
+    }
+    
+    #check:checked ~ label span {
+        background-color: transparent;
+    }
+
+    #check:checked ~ label span::before {
+        /* top: 0; */
+        transform: translate(4px, 5px) rotate(45deg);
+    }
+
+    #check:checked ~ label span::after {
+        top: 0;
+        transform: translate(4px, -4px) rotate(-45deg);
+    }
 }
