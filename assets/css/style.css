@@ -114,6 +114,10 @@ nav span::after {
   font-size: xx-large;
 }
 
+.active {
+    border-bottom: 1px solid black;
+}
+
 /* hero */
 
 #hero-section {
@@ -349,7 +353,7 @@ nav span::after {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -376,6 +380,8 @@ nav span::after {
     background-color: rgba(0, 0, 0, 0.36);
     transform: scale(0,0);
     transition: transform 0.5s ease-in-out;
+    border-radius: 20px;
+
 }
 
 .flashcard-content h3 {
@@ -396,10 +402,12 @@ nav span::after {
 
 .flashcard img {
   width: 100%;
+  border-radius: 20px;
 }
 
 .flashcard audio {
   width: 80%;
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
 }
 
 /* Footer */
