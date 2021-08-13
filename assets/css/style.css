@@ -255,6 +255,14 @@ nav span::after {
   animation-fill-mode: forwards;
 }
 
+#tour-hero-text h2 {
+    font-family: var(--font-1);
+}
+
+#tour-hero-text h3 {
+    font-family: var(--font-2);
+}
+
 /* About us section */
 
 #about-section {
@@ -463,6 +471,7 @@ footer {
   justify-content: space-around;
   text-align: center;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 footer p {
@@ -502,12 +511,41 @@ footer p {
 .tour-page-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  /* align-items: center; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tour-page-container h3 {
+    font-size: 150%;
+    margin: 5px 0;
+    font-family: var(--font-2);
+    
+}
+.text-tour {
+    text-align: center;
+    width: 50%;
+    margin: 5px auto;
+    padding: 5px;
+}
+.tour-page-container p {
+    /* width: 90%; */
+    line-height: 2;
+    font-family: var(--font-2);
+    letter-spacing: 1px;
+}
+
+.tour-page-heading {
+    font-family: var(--font-1);
+    color: white;
+    font-size: 200%;
+    margin: 40px 0;
 }
 
 .tour-page-container img {
-  width: 40%;
+  width: 50%;
+  margin: 5px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.36);
 }
 
 @media screen and (max-width: 1470px) {
