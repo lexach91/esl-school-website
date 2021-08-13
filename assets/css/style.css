@@ -19,12 +19,14 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
   background-color: var(--color-3);
   overflow-x: hidden;
   text-align: center;
+  width: 100%;
 }
 
 .main-container {
@@ -93,7 +95,7 @@ nav span::after {
 
 #menu li {
   margin: 0 20px;
-  transition: all 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 
 #menu a {
@@ -271,7 +273,7 @@ nav span::after {
 #teachers {
   text-align: center;
   width: 100%;
-  margin: 10px;
+  /* margin: 10px; */
   padding-top: 15px;
 }
 
@@ -509,7 +511,10 @@ footer p {
         right: 0;
         z-index: 999;
         background-color: var(--color-1);
-        visibility: hidden;
+        /* visibility: hidden; */
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
     }
 
     nav label {
@@ -528,11 +533,11 @@ footer p {
     nav span, nav span::after, nav span::before {
         display: block;
         position:relative;
-        transition: all 1s ease-in-out;
+        transition: all 300ms ease-in-out;
     }
     
     #check:checked ~ ul {
-        visibility: visible;
+        transform: scale(1,1);
     }
     
     #check:checked ~ label span {
