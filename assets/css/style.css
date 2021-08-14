@@ -30,10 +30,6 @@ body {
   position: relative;
 }
 
-body:last-child {
-    margin-bottom: 0;
-}
-
 .main-container {
   max-width: 1700px;
   margin: 0 auto;
@@ -42,16 +38,17 @@ body:last-child {
 #back-to-top {
   position: absolute;
   top: 150vh;
-  right: 50px;
+  right: 60px;
   bottom: 40px;
   width: 3em;
   pointer-events: none;
+  z-index: 10;
 }
 
 #back-to-top a {
-    position: sticky;
-    pointer-events: all;
-    top: calc(100vh - 5rem);
+  position: sticky;
+  pointer-events: all;
+  top: calc(100vh - 5rem);
 }
 
 /* Menu */
