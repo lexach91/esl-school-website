@@ -488,7 +488,7 @@ footer {
   justify-content: space-evenly;
   text-align: center;
   flex-direction: column;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 footer p {
@@ -561,6 +561,24 @@ footer p {
   margin-left: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.36);
+}
+
+/* Form page styles */
+
+#contact-form-section {
+    background-image: url("../images/form-page-background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 100%;
+    height: calc(100vh - 70px - 10em);
+    position: relative;
+}
+
+#contact-form-section form {
+    position: absolute;
+    left: 100px;
+    top: 150px;
 }
 
 @media screen and (max-width: 1470px) {

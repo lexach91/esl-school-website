@@ -35,11 +35,19 @@
         <form>
             <h2>Contact us for more information <i class="fas fa-comments"></i></h2>
             <label for="fname">First name</label>
-            <input id="fname" type="text">
+            <input id="fname" type="text" required>
             <label for="lname">Last name</label>
-            <input id="lname" type="text">
+            <input id="lname" type="text" required>
             <label for="email">Email address</label>
-            <input type="email" id="email">
+            <input type="email" id="email" required>
+            <h3>What are you interested in?</h3>
+            <label for="full-time">Full-time kindergarten</label>
+            <input type="radio" id="full-time" name="course_preference" value="full-time" required>
+            <label for="english">English classes</label>
+            <input type="radio" id="english" name="course_preference" value="english">
+            <label for="art">Art classes</label>
+            <input type="radio" id="art" name="course_preference" value="art">
+            <input type="submit" value="Send form">
             
         </form>
     </section>
