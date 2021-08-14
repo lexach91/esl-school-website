@@ -27,11 +27,31 @@ body {
   overflow-x: hidden;
   text-align: center;
   width: 100%;
+  position: relative;
+}
+
+body:last-child {
+    margin-bottom: 0;
 }
 
 .main-container {
   max-width: 1700px;
   margin: 0 auto;
+}
+
+#back-to-top {
+  position: absolute;
+  top: 150vh;
+  right: 50px;
+  bottom: 40px;
+  width: 3em;
+  pointer-events: none;
+}
+
+#back-to-top a {
+    position: sticky;
+    pointer-events: all;
+    top: calc(100vh - 5rem);
 }
 
 /* Menu */
@@ -256,11 +276,11 @@ nav span::after {
 }
 
 #tour-hero-text h2 {
-    font-family: var(--font-1);
+  font-family: var(--font-1);
 }
 
 #tour-hero-text h3 {
-    font-family: var(--font-2);
+  font-family: var(--font-2);
 }
 
 /* About us section */
@@ -516,28 +536,27 @@ footer p {
 }
 
 .tour-page-container h3 {
-    font-size: 150%;
-    margin: 5px 0;
-    font-family: var(--font-2);
-    
+  font-size: 150%;
+  margin: 5px 0;
+  font-family: var(--font-2);
 }
 .text-tour {
-    text-align: center;
-    width: 50%;
-    margin: 5px auto;
-    padding: 5px;
+  text-align: center;
+  width: 50%;
+  margin: 5px auto;
+  padding: 5px;
 }
 .tour-page-container p {
-    line-height: 2;
-    font-family: var(--font-2);
-    letter-spacing: 1px;
+  line-height: 2;
+  font-family: var(--font-2);
+  letter-spacing: 1px;
 }
 
 .tour-page-heading {
-    font-family: var(--font-1);
-    color: white;
-    font-size: 200%;
-    margin: 40px 0;
+  font-family: var(--font-1);
+  color: white;
+  font-size: 200%;
+  margin: 40px 0;
 }
 
 .tour-page-container img {
@@ -581,21 +600,21 @@ footer p {
     padding-top: 40px;
     padding-left: 10px;
   }
-  .tour-page-container {   
+  .tour-page-container {
     flex-direction: column;
   }
-  
-  .text-tour {  
-      width: 90%;
+
+  .text-tour {
+    width: 90%;
   }
   .tour-page-container p {
-      line-height: 1.5;
+    line-height: 1.5;
   }
-  
+
   .tour-page-heading {
-      margin: 30px 0;
+    margin: 30px 0;
   }
-  
+
   .tour-page-container img {
     width: 90%;
     margin: 0;
