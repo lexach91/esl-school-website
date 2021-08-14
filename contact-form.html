@@ -46,14 +46,22 @@
                 <input type="email" id="email" placeholder=" " required>
                 <label for="email">Email address</label>
             </div>
+            <h3>What are you interested in?</h3>
             <div class="checkbox-field">
-                <h3>What are you interested in?</h3>
-                <label for="full-time">Full-time kindergarten</label>
-                <input type="radio" id="full-time" name="course_preference" value="full-time" required>
-                <label for="english">English classes</label>
-                <input type="radio" id="english" name="course_preference" value="english">
-                <label for="art">Art classes</label>
-                <input type="radio" id="art" name="course_preference" value="art">
+                <div class="checkbox">
+                    <input type="radio" id="full-time" name="course_preference" value="full-time" required>
+                    <label for="full-time">Full-time kindergarten</label>
+                </div>
+                <div class="checkbox">
+
+                    <input type="radio" id="english" name="course_preference" value="english">
+                    <label for="english">English classes</label>
+                </div>
+                <div class="checkbox">
+
+                    <input type="radio" id="art" name="course_preference" value="art">
+                    <label for="art">Art classes</label>
+                </div>
             </div>
             <input type="submit" value="Send form">
             
