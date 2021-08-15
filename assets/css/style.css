@@ -649,7 +649,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 70%;
+    width: 20rem;
 }
 
 .checkbox {
@@ -708,6 +708,14 @@ input[type=radio] {
     color: var(--color-1);
     font-size: 115%;
 }
+
+
+.checkbox:hover label::before {
+    border-color: rgb(200, 200, 200)
+
+}
+
+
 
 @media screen and (max-width: 1470px) {
   .left-about {
