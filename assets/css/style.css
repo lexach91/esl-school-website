@@ -657,9 +657,48 @@ footer p {
     width: 15rem;
     height: 2rem;
     margin: 1rem 0 0 0;
+    position: relative;
 }
 
+input[type=radio] {
+    display: none;
+}
 
+.checkbox label {
+    padding-left: 25px;
+}
+
+.checkbox label::before {
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    border: 2px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    /* z-index: 999; */
+    /* margin-right: 5px; */
+    border-radius: 50%;
+}
+
+.checkbox label::after {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-1);
+    /* border: 2px solid white; */
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    content: "";
+    /* z-index: 999; */
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.checkbox input[type=radio]:checked ~ label::after {
+    visibility: visible;
+}
 
 @media screen and (max-width: 1470px) {
   .left-about {
