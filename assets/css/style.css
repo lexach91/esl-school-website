@@ -1099,3 +1099,14 @@ input[type="submit"]:hover,
         width: 90%;
     }
 }
+
+
+@media screen and (max-width: 360px) {
+    .input-field {
+        max-width: 95%;
+    }
+
+    .checkbox-field {
+        max-width: 95%;
+    }
+}
