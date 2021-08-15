@@ -711,8 +711,26 @@ input[type=radio] {
 
 
 .checkbox:hover label::before {
-    border-color: rgb(200, 200, 200)
+    border-color: rgb(200, 200, 200);
 
+}
+
+input[type=submit] {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 120%;
+    margin-top: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+input[type=submit]:hover {
+    border-color: rgb(200, 200, 200);
+    background-color: var(--color-1);
+    /* color: rgb(200, 200, 200); */
 }
 
 
