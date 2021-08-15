@@ -666,6 +666,7 @@ input[type=radio] {
 
 .checkbox label {
     padding-left: 25px;
+    transition: all 200ms ease-in-out;
 }
 
 .checkbox label::before {
@@ -693,11 +694,17 @@ input[type=radio] {
     content: "";
     /* z-index: 999; */
     border-radius: 50%;
-    visibility: hidden;
+    transform: scale(0,0);
+    transition: transform 200ms ease-in-out;
 }
 
 .checkbox input[type=radio]:checked ~ label::after {
-    visibility: visible;
+    transform: scale(1,1);
+}
+
+.checkbox input[type=radio]:checked ~ label {
+    color: var(--color-1);
+    font-size: 110%;
 }
 
 @media screen and (max-width: 1470px) {
