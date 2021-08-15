@@ -678,21 +678,18 @@ input[type=radio] {
     left: 0;
     top: 0;
     content: "";
-    /* z-index: 999; */
-    /* margin-right: 5px; */
     border-radius: 50%;
+    transition: all 200ms ease-in-out;
 }
 
 .checkbox label::after {
     width: 10px;
     height: 10px;
     background-color: var(--color-1);
-    /* border: 2px solid white; */
     position: absolute;
     left: 5px;
     top: 5px;
     content: "";
-    /* z-index: 999; */
     border-radius: 50%;
     transform: scale(0,0);
     transition: transform 200ms ease-in-out;
@@ -702,9 +699,14 @@ input[type=radio] {
     transform: scale(1,1);
 }
 
+.checkbox input[type=radio]:checked ~ label::before {
+    border-color: var(--color-1);
+    box-shadow: 0 0 4px 1px var(--color-1);
+}
+
 .checkbox input[type=radio]:checked ~ label {
     color: var(--color-1);
-    font-size: 110%;
+    font-size: 115%;
 }
 
 @media screen and (max-width: 1470px) {
