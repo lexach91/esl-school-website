@@ -569,7 +569,8 @@ footer p {
 
 /* Form page styles */
 
-#contact-form-section {
+#contact-form-section,
+#response-section  {
   background-image: url("../images/form-page-background2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -579,7 +580,8 @@ footer p {
   position: relative;
 }
 
-#contact-form-section form {
+#contact-form-section form,
+#response-section div {
   position: absolute;
   left: 300px;
   top: 100px;
@@ -714,7 +716,7 @@ input[type="radio"] {
 
 .checkbox input[type="radio"]:checked ~ label {
   color: var(--color-1);
-  font-size: 160%;
+  /* font-size: 160%; */
 }
 
 .checkbox:hover label::before {
@@ -733,7 +735,25 @@ input[type="submit"] {
   transition: all 200ms ease-in-out;
 }
 
-input[type="submit"]:hover {
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 15rem;
+  height: 3rem;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-size: 120%;
+  margin-top: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+input[type="submit"]:hover,
+#button:hover {
   border-color: rgb(200, 200, 200);
   background-color: var(--color-1);
   /* color: rgb(200, 200, 200); */
@@ -817,14 +837,16 @@ input[type="submit"]:hover {
     line-height: 1.5;
   }
 
-  #contact-form-section {
+  #contact-form-section,
+  #response-section {
       position: static;
       display: flex;
       align-items: center;
       justify-content: center;
   }
 
-  #contact-form-section form {
+  #contact-form-section form,
+  #response-section div {
     position: static;    
     display: flex;
     
@@ -999,12 +1021,14 @@ input[type="submit"]:hover {
     transform: translate(4px, -4px) rotate(-45deg);
   }
 
-  #contact-form-section {
+  #contact-form-section,
+  #response-section {
       height: 100%;
       min-height: 80vh;
   }
 
-  #contact-form-section form {
+  #contact-form-section form,
+  #response-section div {
       font-size: 70%;
       width: 95%;
       margin: 5px auto;
