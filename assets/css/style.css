@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap");
 
 :root {
-  --color-1: #a99a45ff;
-  --color-2: #f95e4eff;
-  --color-3: #b6b6aeff;
-  --color-4: #7e2412ff;
-  --font-1: "Rock Salt", cursive;
-  --font-2: "Raleway", sans-serif;
+  --primary-color: #a99a45ff;
+  --secondary-color: #b6b6aeff;
+  --heading-font: "Rock Salt", cursive;
+  --primary-font: "Raleway", sans-serif;
 }
 
 *,
@@ -23,7 +21,7 @@ html {
 }
 
 body {
-  background-color: var(--color-3);
+  background-color: var(--secondary-color);
   overflow-x: hidden;
   text-align: center;
   width: 100%;
@@ -93,10 +91,10 @@ nav span::after {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--color-1);
+  background-color: var(--primary-color);
   height: 70px;
   align-items: center;
-  font-family: var(--font-2);
+  font-family: var(--primary-font);
   font-weight: bolder;
   width: 100%;
 }
@@ -118,7 +116,7 @@ nav span::after {
 
 #menu a {
   text-decoration: none;
-  color: #000;
+  color: white;
 }
 
 #menu li:hover {
@@ -127,13 +125,13 @@ nav span::after {
 
 #logo {
   margin-left: 30px;
-  font-family: var(--font-1);
+  font-family: var(--heading-font);
   text-decoration: none;
   font-size: xx-large;
 }
 
 .active {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid whitesmoke;
 }
 
 /* hero */
@@ -179,6 +177,7 @@ nav span::after {
   padding-left: 10px;
 
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
 
   top: 40px;
   right: 150px;
@@ -190,12 +189,12 @@ nav span::after {
 }
 
 #hero-text h2 {
-  font-family: var(--font-1);
-  color: var(--color-1);
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 #hero-text h3 {
-  font-family: var(--font-2);
+  font-family: var(--primary-font);
 }
 
 .glow-button {
@@ -262,6 +261,7 @@ nav span::after {
   padding-left: 10px;
 
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 
   top: 50px;
   left: 150px;
@@ -273,11 +273,11 @@ nav span::after {
 }
 
 #tour-hero-text h2 {
-  font-family: var(--font-1);
+  font-family: var(--heading-font);
 }
 
 #tour-hero-text h3 {
-  font-family: var(--font-2);
+  font-family: var(--primary-font);
 }
 
 /* About us section */
@@ -295,7 +295,7 @@ nav span::after {
   text-align: center;
   font-size: 200%;
   text-transform: uppercase;
-  font-family: var(--font-1);
+  font-family: var(--heading-font);
   color: whitesmoke;
 }
 
@@ -321,7 +321,7 @@ nav span::after {
   width: 66%;
   text-align: center;
   line-height: 2;
-  font-family: var(--font-2);
+  font-family: var(--primary-font);
 }
 
 .right-about div h3 {
@@ -353,7 +353,7 @@ nav span::after {
 #teachers h2 {
   font-size: 250%;
   margin: 30px;
-  font-family: var(--font-1);
+  font-family: var(--heading-font);
   color: #fff;
 }
 
@@ -361,10 +361,10 @@ nav span::after {
   display: inline-block;
   width: 22%;
   position: relative;
-  background-color: var(--color-1);
+  background-color: var(--primary-color);
   text-align: center;
   border-radius: 10px;
-  font-family: var(--font-2);
+  font-family: var(--primary-font);
   color: #000;
   margin-bottom: 100px;
   border: 1px solid white;
@@ -413,7 +413,7 @@ nav span::after {
 }
 
 #flashcards h2 {
-  font-family: var(--font-1);
+  font-family: var(--heading-font);
   font-size: 200%;
   color: #fff;
 }
@@ -456,7 +456,7 @@ nav span::after {
   font-size: 250%;
   margin-top: 25%;
   margin-bottom: 10px;
-  font-family: var(--font-2);
+  font-family: var(--primary-font);
   color: white;
 }
 
@@ -482,7 +482,7 @@ nav span::after {
 
 footer {
   height: 10em;
-  background-color: var(--color-1);
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -535,7 +535,7 @@ footer p {
 .tour-page-container h3 {
   font-size: 150%;
   margin: 5px 0;
-  font-family: var(--font-2);
+  font-family: var(--primary-font);
 }
 .text-tour {
   text-align: center;
@@ -545,12 +545,12 @@ footer p {
 }
 .tour-page-container p {
   line-height: 2;
-  font-family: var(--font-2);
+  font-family: var(--primary-font);
   letter-spacing: 1px;
 }
 
 .tour-page-heading {
-  font-family: var(--font-1);
+  font-family: var(--heading-font);
   color: white;
   font-size: 200%;
   margin: 40px 0;
@@ -596,10 +596,11 @@ footer p {
   height: fit-content;
   width: fit-content;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
   padding: 20px;
   color: white;
-  font-family: var(--font-2);
+  font-family: var(--primary-font);
 }
 
 #contact-form-section h2,
@@ -627,7 +628,7 @@ footer p {
   padding: 1.25rem;
   border-radius: 5px;
   font-size: 120%;
-  font-family: var(--font-2);
+  font-family: var(--primary-font);
 }
 
 .input-field input:hover {
@@ -656,7 +657,7 @@ footer p {
   /* font-size: 0.8rem; */
   left: 0.8rem;
   /* z-index: 999; */
-  background-color: var(--color-1);
+  background-color: var(--primary-color);
 }
 
 .checkbox-field {
@@ -699,7 +700,7 @@ input[type="radio"] {
 .checkbox label::after {
   width: 10px;
   height: 10px;
-  background-color: var(--color-1);
+  background-color: var(--primary-color);
   position: absolute;
   left: 5px;
   top: 5px;
@@ -714,12 +715,12 @@ input[type="radio"] {
 }
 
 .checkbox input[type="radio"]:checked ~ label::before {
-  border-color: var(--color-1);
-  box-shadow: 0 0 4px 1px var(--color-1);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 4px 1px var(--primary-color);
 }
 
 .checkbox input[type="radio"]:checked ~ label {
-  color: var(--color-1);
+  color: var(--primary-color);
   /* font-size: 160%; */
 }
 
@@ -759,14 +760,14 @@ input[type="submit"] {
 input[type="submit"]:hover,
 #button:hover {
   border-color: rgb(200, 200, 200);
-  background-color: var(--color-1);
+  background-color: var(--primary-color);
   /* color: rgb(200, 200, 200); */
 }
 
 /* Gallery */
 
 #gallery h2 {
-    font-family: var(--font-1);
+    font-family: var(--heading-font);
     font-size: 240%;
     color: white;
 } 
@@ -978,6 +979,12 @@ input[type="submit"]:hover,
     margin-bottom: 20px;
   }
 
+  .teacher-card img {
+      height: 250px;
+      object-fit: cover;
+      object-position: 100% 0;
+  }
+
   #teacher1,
   #teacher3 {
     transform: rotate(0deg);
@@ -1025,7 +1032,7 @@ input[type="submit"]:hover,
     top: 70px;
     right: 0;
     z-index: 999;
-    background-color: var(--color-1);
+    background-color: var(--primary-color);
     /* visibility: hidden; */
     transform: scale(1, 0);
     transform-origin: top;
