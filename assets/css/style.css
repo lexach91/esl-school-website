@@ -274,6 +274,7 @@ nav span::after {
 
 #tour-hero-text h2 {
   font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 #tour-hero-text h3 {
@@ -284,9 +285,6 @@ nav span::after {
 
 #about-section {
   width: 100%;
-  /* height: 50em; */
-  /* overflow: hidden; */
-  /* position: relative; */
   margin: 10px;
   padding-top: 15px;
 }
@@ -346,7 +344,6 @@ nav span::after {
 #teachers {
   text-align: center;
   width: 100%;
-  /* margin: 10px; */
   padding-top: 15px;
 }
 
@@ -372,11 +369,10 @@ nav span::after {
 }
 
 .teacher-card h3 {
-    margin-top: 10px;
-    /* font-size: 150%; */
-    color: whitesmoke;
-    font-family: var(--heading-font);
-  }
+  margin-top: 10px;
+  color: whitesmoke;
+  font-family: var(--heading-font);
+}
 
 .teacher-card p {
   margin: 10px;
@@ -495,7 +491,6 @@ footer {
   justify-content: space-evenly;
   text-align: center;
   flex-direction: column;
-  /* margin-top: 40px; */
 }
 
 footer p {
@@ -571,13 +566,13 @@ footer p {
 }
 
 #art-zone {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 /* Form page styles */
 
 #contact-form-section,
-#response-section  {
+#response-section {
   background-image: url("../images/form-page-background2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -586,16 +581,11 @@ footer p {
   min-height: calc(100vh - 70px - 10em);
   display: flex;
   align-items: center;
-
-  /* height: fit-content; */
-  /* position: relative; */
 }
 
 #contact-form-section form,
 #response-section div {
-  /* position: absolute; */
   margin: 20px auto 20px 300px;
-  /* padding-top: 100px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -661,9 +651,7 @@ footer p {
 .input-field input:focus ~ label,
 .input-field input:not(:placeholder-shown) ~ label {
   top: -0.5rem;
-  /* font-size: 0.8rem; */
   left: 0.8rem;
-  /* z-index: 999; */
   background-color: var(--primary-color);
 }
 
@@ -728,7 +716,6 @@ input[type="radio"] {
 
 .checkbox input[type="radio"]:checked ~ label {
   color: var(--primary-color);
-  /* font-size: 160%; */
 }
 
 .checkbox:hover label::before {
@@ -748,12 +735,12 @@ input[type="submit"] {
 }
 
 #button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 15rem;
   height: 3rem;
   border-radius: 10px;
   background: none;
@@ -768,42 +755,40 @@ input[type="submit"]:hover,
 #button:hover {
   border-color: rgb(200, 200, 200);
   background-color: var(--primary-color);
-  /* color: rgb(200, 200, 200); */
 }
 
 /* Gallery */
 
 #gallery h2 {
-    font-family: var(--heading-font);
-    font-size: 240%;
-    color: white;
-} 
+  font-family: var(--heading-font);
+  font-size: 240%;
+  color: white;
+}
 
 #gallery img {
-    width: 49%;
-    border-radius: 10px;
-    transition: all 400ms ease-in-out;
+  width: 49%;
+  border-radius: 10px;
+  transition: all 400ms ease-in-out;
 }
 
 #gallery img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-
 .gallery-level-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .gallery-level-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* MEDIA QUERIES */
@@ -873,7 +858,7 @@ input[type="submit"]:hover,
   }
 
   .gallery-level-1 {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -892,30 +877,24 @@ input[type="submit"]:hover,
 
   #contact-form-section,
   #response-section {
-      position: static;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      min-height: 80vh;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 80vh;
   }
 
   #contact-form-section form,
   #response-section div {
-    position: static;    
+    position: static;
     display: flex;
-    
+
     align-self: center;
     height: 90%;
     width: fit-content;
-    
-    
   }
-
 }
-
-
-
 
 @media screen and (max-width: 988px) {
   #hero-section {
@@ -926,7 +905,7 @@ input[type="submit"]:hover,
   }
 
   #back-to-top {
-      display: none;
+    display: none;
   }
 
   #tour-hero {
@@ -991,9 +970,9 @@ input[type="submit"]:hover,
   }
 
   .teacher-card img {
-      height: 250px;
-      object-fit: cover;
-      object-position: 100% 0;
+    height: 250px;
+    object-fit: cover;
+    object-position: 100% 0;
   }
 
   #teacher1,
@@ -1038,13 +1017,11 @@ input[type="submit"]:hover,
     flex-direction: column;
     justify-content: space-evenly;
     height: 160px;
-    /* display: none; */
     position: absolute;
     top: 70px;
     right: 0;
     z-index: 999;
     background-color: var(--primary-color);
-    /* visibility: hidden; */
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
@@ -1080,7 +1057,6 @@ input[type="submit"]:hover,
   }
 
   #check:checked ~ label span::before {
-    /* top: 0; */
     transform: translate(4px, 5px) rotate(45deg);
   }
 
@@ -1091,40 +1067,36 @@ input[type="submit"]:hover,
 
   #contact-form-section,
   #response-section {
-      height: 100%;
-      min-height: 80vh;
+    height: 100%;
+    min-height: 80vh;
   }
 
   #contact-form-section form,
   #response-section div {
-      font-size: 70%;
-      width: 95%;
-      margin: 5px auto;
-      /* height: fit-content; */
-      
-    }
+    font-size: 70%;
+    width: 95%;
+    margin: 5px auto;
+  }
 
-    .input-field label,
-    .checkbox-field label {
-        font-size: 150%;
-    }
-  
+  .input-field label,
+  .checkbox-field label {
+    font-size: 150%;
+  }
 
-    .gallery-level-2 {
-        flex-direction: column;
-    }
-    #gallery img {
-        width: 90%;
-    }
+  .gallery-level-2 {
+    flex-direction: column;
+  }
+  #gallery img {
+    width: 90%;
+  }
 }
 
-
 @media screen and (max-width: 360px) {
-    .input-field {
-        max-width: 95%;
-    }
+  .input-field {
+    max-width: 95%;
+  }
 
-    .checkbox-field {
-        max-width: 95%;
-    }
+  .checkbox-field {
+    max-width: 95%;
+  }
 }
