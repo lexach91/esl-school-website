@@ -1055,9 +1055,9 @@ input[type="submit"]:hover,
     padding: 0;
   }
 
-  #logo {
+  /* #logo {
     font-size: 1em;
-  }
+  } */
 
   #menu {
     position: relative;
@@ -1199,11 +1199,27 @@ input[type="submit"]:hover,
           /* display: none; */
       }
 
+      .section-header {
+          margin: 15px;
+      }
+      #flashcards {
+          margin: 0;
+      }
+
       .flashcard {
           width: 40%;
       }
       .two-cards {
           flex-direction: row;
           justify-content: space-evenly;
+      }
+
+      .gallery-level-2 {
+        flex-direction: row;
+      }
+
+      #gallery img {
+          width: 48%;
+          margin-bottom: 10px;
       }
 }
