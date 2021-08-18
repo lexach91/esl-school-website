@@ -123,7 +123,7 @@ nav span::after {
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: var(--primary-color);
-  height: 70px;
+  height: 100px;
   align-items: center;
   font-family: var(--primary-font);
   font-weight: bolder;
@@ -155,10 +155,16 @@ nav span::after {
 }
 
 #logo {
-  margin-left: 30px;
-  font-family: var(--heading-font);
-  text-decoration: none;
-  font-size: xx-large;
+  margin-left: 50px;
+  /* font-family: var(--heading-font); */
+  /* text-decoration: none; */
+  /* font-size: xx-large; */
+  height: 80px;
+}
+
+#logo img {
+    height: 80px;
+    display: block;
 }
 
 .active {
@@ -1060,9 +1066,9 @@ input[type="submit"]:hover,
   #menu ul {
     flex-direction: column;
     justify-content: space-evenly;
-    height: 160px;
+    height: 200px;
     position: absolute;
-    top: 70px;
+    top: 100px;
     right: 0;
     z-index: 999;
     background-color: var(--primary-color);
@@ -1074,7 +1080,7 @@ input[type="submit"]:hover,
   nav label {
     display: flex;
     position: absolute;
-    top: 15px;
+    /* top: 15px; */
     right: 26px;
     transform: scale(1.2);
     width: 34px;
@@ -1082,6 +1088,15 @@ input[type="submit"]:hover,
     cursor: pointer;
     align-items: center;
     justify-content: center;
+  }
+
+  #logo {
+      height: 50px;
+      margin-left: 20px;
+  }
+
+  #logo img {
+      height: 50px;
   }
 
   nav span,
@@ -1143,4 +1158,43 @@ input[type="submit"]:hover,
   .checkbox-field {
     max-width: 95%;
   }
+}
+
+
+@media screen and (orientation: landscape) and (max-width: 980px) {
+    /* .teacher-card {
+        width: 80%;
+        margin-bottom: 20px;
+        height: 80%;
+      }
+    
+      .teacher-card img {
+        height: 80%;
+        object-fit: cover;
+        object-position: 100% 0;
+      } */
+      .teacher-card {
+          display: flex;
+          flex-direction: row;
+          height: 90vh;
+          align-items: center;
+          justify-content: space-around;
+          width: 80%;
+          margin: 10px 0;
+          /* position: relative; */
+      }
+
+      .teacher-card div {
+          display: flex;
+          flex-direction: column;
+      }
+      .teacher-card img {
+          height: 100%;
+          max-width: 30%;
+          border-radius: 10px 0 0 10px;
+          /* object-fit: contain; */
+          /* position: absolute; */
+          /* left: 0; */
+          /* display: none; */
+      }
 }
