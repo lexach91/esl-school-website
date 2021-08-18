@@ -1132,6 +1132,11 @@ input[type="submit"]:hover,
   .checkbox-field {
     max-width: 95%;
   }
+
+  .flashcard-content h3 {
+    font-size: 50%;
+    margin-top: 20%;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-width: 980px) {
