@@ -1137,6 +1137,10 @@ input[type="submit"]:hover,
     font-size: 160%;
     margin-top: 20%;
   }
+
+  .flashcard-content audio {
+      width: 95%;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-width: 980px) {
