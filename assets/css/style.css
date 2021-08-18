@@ -49,6 +49,38 @@ body {
   top: calc(100vh - 5rem);
 }
 
+.section-header {
+    font-family: var(--heading-font);
+    color: white;
+    font-size: 200%;
+    margin: 40px 0;
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 14px 10px var(--primary-color);
+  }
+
+  /* #gallery h2 {
+    font-family: var(--heading-font);
+    font-size: 240%;
+    color: white;
+  }
+  
+  #teachers h2 {
+    font-size: 250%;
+    margin: 30px;
+    font-family: var(--heading-font);
+    color: #fff;
+  }
+
+  #flashcards h2 {
+    font-family: var(--heading-font);
+    font-size: 200%;
+    color: #fff;
+  } */
+  
+
 /* Menu */
 
 header {
@@ -289,13 +321,13 @@ nav span::after {
   padding-top: 15px;
 }
 
-#about-section h2 {
+/* #about-section h2 {
   text-align: center;
   font-size: 200%;
   text-transform: uppercase;
   font-family: var(--heading-font);
   color: whitesmoke;
-}
+} */
 
 #about-section img {
   width: 100%;
@@ -347,12 +379,7 @@ nav span::after {
   padding-top: 15px;
 }
 
-#teachers h2 {
-  font-size: 250%;
-  margin: 30px;
-  font-family: var(--heading-font);
-  color: #fff;
-}
+
 
 .teacher-card {
   display: inline-block;
@@ -415,11 +442,6 @@ nav span::after {
   margin-bottom: 150px;
 }
 
-#flashcards h2 {
-  font-family: var(--heading-font);
-  font-size: 200%;
-  color: #fff;
-}
 
 #flashcard-container {
   margin-top: 50px;
@@ -441,6 +463,8 @@ nav span::after {
   margin-bottom: 20px;
   position: relative;
   transition: transform 0.5s ease-in-out;
+  border-radius: 20px;
+  height:fit-content;
 }
 
 .flashcard-content {
@@ -474,6 +498,9 @@ nav span::after {
 .flashcard img {
   width: 100%;
   border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.36);
+
 }
 
 .flashcard audio {
@@ -521,7 +548,6 @@ footer p {
 }
 
 .social-networks i:hover {
-  color: white;
   transform: scale(1.2) rotate(4deg);
 }
 
@@ -551,12 +577,7 @@ footer p {
   letter-spacing: 1px;
 }
 
-.tour-page-heading {
-  font-family: var(--heading-font);
-  color: white;
-  font-size: 200%;
-  margin: 40px 0;
-}
+
 
 .tour-page-container img {
   width: 50%;
@@ -598,6 +619,10 @@ footer p {
   padding: 20px;
   color: white;
   font-family: var(--primary-font);
+}
+
+#response-section div {
+    padding: 50px 20px; 
 }
 
 #contact-form-section h2,
@@ -747,7 +772,7 @@ input[type="submit"] {
   border: 2px solid white;
   color: white;
   font-size: 120%;
-  margin-top: 10px;
+  margin-top: 40px;
   transition: all 200ms ease-in-out;
 }
 
@@ -759,11 +784,6 @@ input[type="submit"]:hover,
 
 /* Gallery */
 
-#gallery h2 {
-  font-family: var(--heading-font);
-  font-size: 240%;
-  color: white;
-}
 
 #gallery img {
   width: 49%;
