@@ -1187,4 +1187,13 @@ input[type="submit"]:hover,
     width: 48%;
     margin-bottom: 10px;
   }
+
+  .flashcard-content h3 {
+    font-size: 160%;
+    margin-top: 20%;
+  }
+
+  .flashcard-content audio {
+      width: 95%;
+  }
 }
