@@ -165,7 +165,7 @@ nav span::after {
   height: 50em;
 
   animation-name: hero-move;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   position: absolute;
   left: 0;
@@ -199,7 +199,7 @@ nav span::after {
   border-radius: 10px;
   position: absolute;
   animation-name: hero-text-appear;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -257,7 +257,7 @@ nav span::after {
   height: 40em;
 
   animation-name: hero-move;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   position: absolute;
   left: 0;
@@ -282,7 +282,7 @@ nav span::after {
   border-radius: 10px;
   position: absolute;
   animation-name: hero-text-appear;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -948,7 +948,7 @@ input[type="submit"]:hover,
     height: 35em;
 
     animation-name: hero-move;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     position: absolute;
     left: 0;
@@ -960,7 +960,7 @@ input[type="submit"]:hover,
     height: 35em;
 
     animation-name: hero-move;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     position: absolute;
     left: 0;
