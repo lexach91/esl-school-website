@@ -1190,11 +1190,20 @@ input[type="submit"]:hover,
       }
       .teacher-card img {
           height: 100%;
-          max-width: 30%;
+          max-width: 35%;
           border-radius: 10px 0 0 10px;
-          /* object-fit: contain; */
+          /* object-fit: cover;
+          object-position: 100% 100%; */
           /* position: absolute; */
           /* left: 0; */
           /* display: none; */
+      }
+
+      .flashcard {
+          width: 40%;
+      }
+      .two-cards {
+          flex-direction: row;
+          justify-content: space-evenly;
       }
 }
