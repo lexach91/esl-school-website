@@ -4,7 +4,7 @@
   --primary-color: #a99a45ff;
   --secondary-color: #b6b6aeff;
   --heading-font: "Rock Salt", cursive;
-  --primary-font: 'Poppins', sans-serif;
+  --primary-font: "Poppins", sans-serif;
 }
 
 *,
@@ -60,25 +60,6 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 14px 10px var(--primary-color);
 }
-
-/* #gallery h2 {
-    font-family: var(--heading-font);
-    font-size: 240%;
-    color: white;
-  }
-  
-  #teachers h2 {
-    font-size: 250%;
-    margin: 30px;
-    font-family: var(--heading-font);
-    color: #fff;
-  }
-
-  #flashcards h2 {
-    font-family: var(--heading-font);
-    font-size: 200%;
-    color: #fff;
-  } */
 
 /* Menu */
 
@@ -156,15 +137,13 @@ nav span::after {
 
 #logo {
   margin-left: 50px;
-  /* font-family: var(--heading-font); */
-  /* text-decoration: none; */
-  /* font-size: xx-large; */
+
   height: 80px;
 }
 
 #logo img {
-    height: 80px;
-    display: block;
+  height: 80px;
+  display: block;
 }
 
 .active {
@@ -214,7 +193,6 @@ nav span::after {
   padding-left: 10px;
 
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
 
   top: 40px;
   right: 150px;
@@ -298,7 +276,6 @@ nav span::after {
   padding-left: 10px;
 
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
 
   top: 50px;
   left: 150px;
@@ -325,14 +302,6 @@ nav span::after {
   margin: 10px;
   padding-top: 15px;
 }
-
-/* #about-section h2 {
-  text-align: center;
-  font-size: 200%;
-  text-transform: uppercase;
-  font-family: var(--heading-font);
-  color: whitesmoke;
-} */
 
 #about-section img {
   width: 100%;
@@ -371,8 +340,8 @@ nav span::after {
 }
 
 .right-about div p {
-    font-size: 130%;
-  }
+  font-size: 130%;
+}
 
 .right-about div:hover {
   transform: scale(1.05);
@@ -583,7 +552,6 @@ footer p {
 .tour-page-container p {
   line-height: 2;
   font-family: var(--primary-font);
-  /* letter-spacing: 1px; */
   font-size: 130%;
 }
 
@@ -622,7 +590,7 @@ footer p {
   height: fit-content;
   width: fit-content;
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
+
   border-radius: 10px;
   padding: 20px;
   color: white;
@@ -793,7 +761,7 @@ input[type="submit"]:hover,
 /* Gallery */
 
 #gallery {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #gallery img {
@@ -1065,10 +1033,6 @@ input[type="submit"]:hover,
     padding: 0;
   }
 
-  /* #logo {
-    font-size: 1em;
-  } */
-
   #menu {
     position: relative;
   }
@@ -1090,7 +1054,7 @@ input[type="submit"]:hover,
   nav label {
     display: flex;
     position: absolute;
-    /* top: 15px; */
+
     right: 26px;
     transform: scale(1.2);
     width: 34px;
@@ -1101,12 +1065,12 @@ input[type="submit"]:hover,
   }
 
   #logo {
-      height: 50px;
-      margin-left: 20px;
+    height: 50px;
+    margin-left: 20px;
   }
 
   #logo img {
-      height: 50px;
+    height: 50px;
   }
 
   nav span,
@@ -1170,66 +1134,48 @@ input[type="submit"]:hover,
   }
 }
 
-
 @media screen and (orientation: landscape) and (max-width: 980px) {
-    /* .teacher-card {
-        width: 80%;
-        margin-bottom: 20px;
-        height: 80%;
-      }
-    
-      .teacher-card img {
-        height: 80%;
-        object-fit: cover;
-        object-position: 100% 0;
-      } */
-      .teacher-card {
-          display: flex;
-          flex-direction: row;
-          height: 90vh;
-          align-items: center;
-          justify-content: space-around;
-          width: 80%;
-          margin: 10px 0;
-          /* position: relative; */
-      }
+  .teacher-card {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 10px 0;
+  }
 
-      .teacher-card div {
-          display: flex;
-          flex-direction: column;
-      }
-      .teacher-card img {
-          height: 100%;
-          max-width: 35%;
-          border-radius: 10px 0 0 10px;
-          /* object-fit: cover;
-          object-position: 100% 100%; */
-          /* position: absolute; */
-          /* left: 0; */
-          /* display: none; */
-      }
+  .teacher-card div {
+    display: flex;
+    flex-direction: column;
+  }
+  .teacher-card img {
+    height: 100%;
+    max-width: 35%;
+    border-radius: 10px 0 0 10px;
+  }
 
-      .section-header {
-          margin: 15px;
-      }
-      #flashcards {
-          margin: 0;
-      }
+  .section-header {
+    margin: 15px;
+  }
+  #flashcards {
+    margin: 0;
+  }
 
-      .flashcard {
-          width: 40%;
-      }
-      .two-cards {
-          flex-direction: row;
-          justify-content: space-evenly;
-      }
+  .flashcard {
+    width: 40%;
+  }
+  .two-cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-      .gallery-level-2 {
-        flex-direction: row;
-      }
+  .gallery-level-2 {
+    flex-direction: row;
+  }
 
-      #gallery img {
-          width: 48%;
-          margin-bottom: 10px;
-      }
+  #gallery img {
+    width: 48%;
+    margin-bottom: 10px;
+  }
 }
