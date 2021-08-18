@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rock+Salt&display=swap");
 
 :root {
   --primary-color: #a99a45ff;
   --secondary-color: #b6b6aeff;
   --heading-font: "Rock Salt", cursive;
-  --primary-font: "Raleway", sans-serif;
+  --primary-font: 'Poppins', sans-serif;
 }
 
 *,
@@ -370,6 +370,10 @@ nav span::after {
   transition: all 0.5s ease-in-out;
 }
 
+.right-about div p {
+    font-size: 130%;
+  }
+
 .right-about div:hover {
   transform: scale(1.05);
   background-color: rgba(7, 0, 0, 0.1);
@@ -565,9 +569,10 @@ footer p {
 }
 
 .tour-page-container h3 {
-  font-size: 150%;
+  font-size: 200%;
   margin: 5px 0;
   font-family: var(--primary-font);
+  letter-spacing: 1px;
 }
 .text-tour {
   text-align: center;
@@ -578,7 +583,8 @@ footer p {
 .tour-page-container p {
   line-height: 2;
   font-family: var(--primary-font);
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
+  font-size: 130%;
 }
 
 .tour-page-container img {
@@ -785,6 +791,10 @@ input[type="submit"]:hover,
 }
 
 /* Gallery */
+
+#gallery {
+    margin-bottom: 30px;
+}
 
 #gallery img {
   width: 49%;
