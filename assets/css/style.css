@@ -336,7 +336,7 @@ nav span::after {
 }
 
 .about-container {
-  padding: 5em;
+  padding: 0 5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,7 +405,7 @@ nav span::after {
   margin: 10px;
 }
 #teacher1 {
-  transform: rotate(-30deg) translateY(20%) translateX(30%);
+  transform: rotate(-30deg) translateY(23%) translateX(30%);
   z-index: 3;
   transition: all 1000ms ease-in-out;
 }
@@ -416,7 +416,7 @@ nav span::after {
 }
 
 #teacher3 {
-  transform: rotate(30deg) translateY(20%) translateX(-30%);
+  transform: rotate(30deg) translateY(23%) translateX(-30%);
   z-index: 1;
   transition: all 1000ms ease-in-out;
 }
@@ -424,6 +424,9 @@ nav span::after {
 .teacher-card img {
   width: 100%;
   border-radius: 10px 10px 0 0;
+  height: 400px;
+  object-fit: cover;
+  object-position: 100% 0;
 }
 
 #teacher1:hover,
