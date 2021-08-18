@@ -830,6 +830,26 @@ input[type="submit"]:hover,
   #flashcard-container {
     flex-direction: column;
   }
+
+  .teacher-card {
+      width: 400px;
+
+      height: fit-content;
+  }
+  
+  #teacher1:hover,
+  #teacher2:hover,
+  #teacher3:hover {
+    z-index: 999;
+    transform: rotate(0deg) scale(1.05);
+    margin: 0;
+}
+}
+
+@media screen and (max-width: 1230px) {
+    .teacher-card {
+        width: 390px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -840,6 +860,10 @@ input[type="submit"]:hover,
   .right-about {
     width: 50%;
     line-height: 1.5;
+  }
+
+  .teacher-card {
+    width: 350px;
   }
 
   #hero-text {
@@ -896,6 +920,10 @@ input[type="submit"]:hover,
   .right-about {
     width: 100%;
     line-height: 1.5;
+  }
+
+  .teacher-card {
+    width: 320px;
   }
 
   #contact-form-section,
@@ -990,10 +1018,11 @@ input[type="submit"]:hover,
   .teacher-card {
     width: 80%;
     margin-bottom: 20px;
+    height: 80%;
   }
 
   .teacher-card img {
-    height: 250px;
+    height: 60vh;
     object-fit: cover;
     object-position: 100% 0;
   }
