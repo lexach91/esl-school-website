@@ -1007,10 +1007,10 @@ input[type="submit"]:hover,
 
   .teacher-card h3 {
     margin-top: 0;
-}
-.teacher-card p {
+  }
+  .teacher-card p {
     margin: 0;
-}
+  }
 
   .teacher-card img {
     height: 50vh;
@@ -1036,7 +1036,7 @@ input[type="submit"]:hover,
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
-}
+  }
 
   .about-container {
     width: 95%;
@@ -1055,7 +1055,7 @@ input[type="submit"]:hover,
   }
 
   .section-header {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   #about-section {
@@ -1154,15 +1154,14 @@ input[type="submit"]:hover,
   }
 
   .tour-page-container h3 {
-    font-size: 150%;    
-}
+    font-size: 150%;
+  }
 
-.tour-page-container p {
+  .tour-page-container p {
     line-height: 1.5;
     font-size: 110%;
     text-align: justify;
-}
-
+  }
 }
 
 @media screen and (max-width: 360px) {
