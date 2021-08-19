@@ -140,3 +140,8 @@ Here the parents can get required information about the school, become familiar 
 + ##### Media
     - All the images for the website were taken from [Unsplash](https://unsplash.com/)
     - All audio files were recorded by me on my phone.
+
+---
+#### Wireframes
+
+![Wireframes](assets/images/wireframes.png)
