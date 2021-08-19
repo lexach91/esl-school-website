@@ -1005,8 +1005,15 @@ input[type="submit"]:hover,
     height: 80%;
   }
 
+  .teacher-card h3 {
+    margin-top: 0;
+}
+.teacher-card p {
+    margin: 0;
+}
+
   .teacher-card img {
-    height: 60vh;
+    height: 50vh;
     object-fit: cover;
     object-position: 100% 0;
   }
@@ -1025,6 +1032,12 @@ input[type="submit"]:hover,
     width: 80%;
   }
 
+  #flashcards {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
   .about-container {
     width: 95%;
     margin: 0 auto;
@@ -1034,6 +1047,15 @@ input[type="submit"]:hover,
   .right-about,
   .left-about {
     width: 100%;
+  }
+
+  .right-about div p {
+    font-size: 110%;
+    text-align: justify;
+  }
+
+  .section-header {
+      margin-bottom: 15px;
   }
 
   #about-section {
@@ -1130,6 +1152,17 @@ input[type="submit"]:hover,
   #gallery img {
     width: 90%;
   }
+
+  .tour-page-container h3 {
+    font-size: 150%;    
+}
+
+.tour-page-container p {
+    line-height: 1.5;
+    font-size: 110%;
+    text-align: justify;
+}
+
 }
 
 @media screen and (max-width: 360px) {
