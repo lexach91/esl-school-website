@@ -8,6 +8,8 @@ Here the parents can get required information about the school, become familiar 
 
 ---
 ## Features
+
+### Home page
 + ##### Navigation
     - Positioned at the top of the page.
     - Contains logo of the school at the left corner.
