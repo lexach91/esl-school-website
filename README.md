@@ -125,6 +125,7 @@ Here the parents can get required information about the school, become familiar 
     - No errors or warnings were found when passing through the official W3C (Jigsaw) validator.
 + ##### Accessibility and performance 
     - Using lighthouse in devtools I confirmed that the website is performing well, accessible and colors and fonts chosen are readable.
+    
     ![Performance score](assets/images/lighthouse-metrics2.png)
 
 ---
