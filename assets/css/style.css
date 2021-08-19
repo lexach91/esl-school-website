@@ -502,12 +502,12 @@ footer p {
 }
 
 footer p a {
-    color: white;
-    transition: all 250ms ease-in-out;
-  }
+  color: white;
+  transition: all 250ms ease-in-out;
+}
 footer p a:hover {
-    opacity: 0.4;
-  }
+  opacity: 0.4;
+}
 
 .social-networks {
   display: flex;
@@ -1147,7 +1147,7 @@ input[type="submit"]:hover,
   }
 
   .flashcard-content audio {
-      width: 95%;
+    width: 95%;
   }
 }
 
@@ -1202,6 +1202,6 @@ input[type="submit"]:hover,
   }
 
   .flashcard-content audio {
-      width: 95%;
+    width: 95%;
   }
 }
