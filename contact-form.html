@@ -53,15 +53,15 @@
       <form method="get" action="response.html">
         <h2>Contact us for more information <i class="fas fa-comments"></i></h2>
         <div class="input-field">
-          <input id="fname" type="text" placeholder=" " required />
+          <input id="fname" type="text" placeholder=" " aria-label="First name" required />
           <label for="fname">First name</label>
         </div>
         <div class="input-field">
-          <input id="lname" type="text" placeholder=" " required />
+          <input id="lname" type="text" placeholder=" " aria-label="Last name" required />
           <label for="lname">Last name</label>
         </div>
         <div class="input-field">
-          <input type="email" id="email" placeholder=" " required />
+          <input type="email" id="email" placeholder=" " aria-label="Email address" required />
           <label for="email">Email address</label>
         </div>
         <h3>What are you interested in?</h3>
@@ -73,6 +73,7 @@
               name="course_preference"
               value="full-time"
               required
+              aria-label="Full-time kindergarten"
             />
             <label for="full-time">Full-time kindergarten</label>
           </div>
@@ -82,15 +83,16 @@
               id="english"
               name="course_preference"
               value="english"
+              aria-label="English classes"
             />
             <label for="english">English classes</label>
           </div>
           <div class="checkbox">
-            <input type="radio" id="art" name="course_preference" value="art" />
+            <input type="radio" id="art" name="course_preference" value="art" aria-label="Art classes"/>
             <label for="art">Art classes</label>
           </div>
         </div>
-        <input type="submit" value="Send form" />
+        <input type="submit" value="Send form" aria-label="Submit form"/>
       </form>
     </section>
 
