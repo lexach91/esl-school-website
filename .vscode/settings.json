@@ -25,5 +25,8 @@
    "editor.defaultFormatter": "HookyQR.beautify",
    "[css]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
    }
 }
