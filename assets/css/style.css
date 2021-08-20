@@ -24,7 +24,6 @@ html {
   width: 100%;
 }
 
-
 /* Styles for all pages */
 body {
   background-color: var(--secondary-color);
@@ -33,7 +32,6 @@ body {
   width: 100%;
   position: relative;
 }
-
 
 .main-container {
   max-width: 1700px;
@@ -278,13 +276,13 @@ nav span::after {
 /* Keyframes for hero sections animations and scroll buttons */
 
 @keyframes hero-move {
-    from {
-      background-position: center top;
-    }
-    to {
-      background-position: center center;
-    }
+  from {
+    background-position: center top;
   }
+  to {
+    background-position: center center;
+  }
+}
 
 @keyframes glowing {
   0% {
