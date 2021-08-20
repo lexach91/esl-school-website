@@ -1,5 +1,7 @@
+/* Google Fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rock+Salt&display=swap");
 
+/* Color scheme and fonts variables */
 :root {
   --primary-color: #a99a45ff;
   --secondary-color: #b6b6aeff;
@@ -7,6 +9,7 @@
   --primary-font: "Poppins", sans-serif;
 }
 
+/* Reset the standard padding and margin */
 *,
 *::after,
 *::before {
@@ -15,11 +18,14 @@
   box-sizing: border-box;
 }
 
+/* Add smooth scrolling effect to the website */
 html {
   scroll-behavior: smooth;
   width: 100%;
 }
 
+
+/* Styles for all pages */
 body {
   background-color: var(--secondary-color);
   overflow-x: hidden;
@@ -27,6 +33,7 @@ body {
   width: 100%;
   position: relative;
 }
+
 
 .main-container {
   max-width: 1700px;
@@ -67,6 +74,7 @@ header {
   width: 100%;
 }
 
+/* Styles to create a hamburger menu for mobile devices */
 nav input,
 nav label {
   display: none;
@@ -97,6 +105,8 @@ nav span::before {
 nav span::after {
   top: 3px;
 }
+
+/* Desktop navbar */
 
 #menu {
   display: flex;
@@ -150,7 +160,7 @@ nav span::after {
   border-bottom: 1px solid whitesmoke;
 }
 
-/* hero */
+/* Hero section of the home page */
 
 #hero-section {
   width: 100%;
@@ -169,15 +179,6 @@ nav span::after {
   animation-fill-mode: forwards;
   position: absolute;
   left: 0;
-}
-
-@keyframes hero-move {
-  from {
-    background-position: center top;
-  }
-  to {
-    background-position: center center;
-  }
 }
 
 #hero-text {
@@ -219,27 +220,6 @@ nav span::after {
   animation-name: glowing;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-}
-
-@keyframes glowing {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes hero-text-appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* Hero section for tour page */
@@ -293,6 +273,38 @@ nav span::after {
 
 #tour-hero-text h3 {
   font-family: var(--primary-font);
+}
+
+/* Keyframes for hero sections animations and scroll buttons */
+
+@keyframes hero-move {
+    from {
+      background-position: center top;
+    }
+    to {
+      background-position: center center;
+    }
+  }
+
+@keyframes glowing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-text-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* About us section */
@@ -349,7 +361,7 @@ nav span::after {
   border-radius: 10px;
 }
 
-/* Teachers */
+/* Teachers section */
 
 #teachers {
   text-align: center;
@@ -413,7 +425,7 @@ nav span::after {
   margin: 0 15%;
 }
 
-/* Flashcards */
+/* Flashcards section */
 
 #flashcards {
   text-align: center;
@@ -679,6 +691,8 @@ footer p a:hover {
   position: relative;
 }
 
+/* Customizing radio buttons */
+
 input[type="radio"] {
   display: none;
 }
@@ -766,7 +780,7 @@ input[type="submit"]:hover,
   background-color: var(--primary-color);
 }
 
-/* Gallery */
+/* Gallery page styles */
 
 #gallery {
   margin-bottom: 30px;
@@ -963,7 +977,7 @@ input[type="submit"]:hover,
   }
 
   #tour-hero-image {
-    background: url("../images/hero.jpg") no-repeat center center/cover;
+    background: url("../images/hero2.jpg") no-repeat center center/cover;
     width: 100%;
     height: 35em;
 
