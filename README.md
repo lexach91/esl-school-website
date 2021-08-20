@@ -7,6 +7,16 @@ Here the parents can get required information about the school, become familiar 
 ![site on different devices](/assets/images/am-i-responsive.png)
 
 ---
+## User stories
++ As a first time visitor, I want to understand of the website, so I can learn more about the school.
++ As a first time visitor, I want to be able to easily navigate through the website, so I can find the information I am looking for.
++ As a first time visitor, I want to see the information about the facilities of the school, so I can learn more about it.
++ As a first time visitor, I want to see the information about the teachers of the school, so I can learn more about them.
++ As a first time visitor, I want to see some materials used in teaching process, so I can become familiar with it.
++ As a parent of the school's student, I want the website to have the gallery, so I can find the photos from school's activities.
++ As a user, I want the website to have a contact form page, so I cant easily contact the school.
++ As a mobile device user, I want the website to be responsive, so I can use my phone or tablet to visit it.
+---
 ## Features
 
 ### Home page
