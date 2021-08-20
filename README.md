@@ -10,6 +10,15 @@ Here the parents can get required information about the school, become familiar 
 
 ---
 
+## Technologies used
+
+- HTML
+- CSS
+- Font Awesome icons
+- Google fonts
+
+---
+
 ## User stories
 
 - As a first time visitor, I want to understand of the website, so I can learn more about the school.
@@ -52,7 +61,7 @@ Here the parents can get required information about the school, become familiar 
     - It has the name of the school.
     - It tells the user that the school is the best choice for their child.
     - It shows glowing button that can be clicked, and leads to the next section of the page.
-  ![Hero section](assets/images/hero-section.png)
+      ![Hero section](assets/images/hero-section.png)
 
 ---
 
@@ -60,7 +69,7 @@ Here the parents can get required information about the school, become familiar 
   - About us section contains an image at the left side.
   - About us section provides information about the school.
   - About us section tells the user why they should consider choosing the school for their child.
-  ![About us section](assets/images/about-us-section.png)
+    ![About us section](assets/images/about-us-section.png)
 
 ---
 
@@ -170,7 +179,7 @@ Here the parents can get required information about the school, become familiar 
   - No errors or warnings were found when passing through the official W3C (Jigsaw) validator.
 - ##### Accessibility and performance
   - Using lighthouse in devtools I confirmed that the website is performing well, accessible and colors and fonts chosen are readable.
-  ![Performance score](assets/images/lighthouse-metrics2.png)
+    ![Performance score](assets/images/lighthouse-metrics2.png)
 
 ---
 
